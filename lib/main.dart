@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palladioitinerante/calendariouscite.dart';
 import 'package:palladioitinerante/ringraziamenti.dart';
 import 'package:palladioitinerante/splash.dart';
 import 'drawer.dart';
@@ -23,9 +24,9 @@ class MyApp extends StatelessWidget {
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryIconTheme: IconThemeData(color: Colors.white), // use this
+        primaryIconTheme: IconThemeData(color: Colors.black), // use this
 
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.yellow,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       //home: MyHomePage()  Nel caso avessi più pagine da navigare, non uso il parametro home ma InitialRoute
@@ -45,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 
-  List <Widget> myPages = [Home(), Home(), Home()];
+  List <Widget> myPages = [Home(), Home(), CalendarioUscite()];
   int selectedIndex = 0;
 
 
@@ -87,16 +88,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
       appBar: AppBar(
           title: Text('PALLADIO ITINERANTE', style: TextStyle(
-          color: Colors.white,
+          color: Colors.black,
         ),),
-        brightness: Brightness.dark, // in questo modo l'orario e la carica della batteria diventano bianche
+        brightness: Brightness.light, // in questo modo l'orario e la carica della batteria diventano bianche
 
         centerTitle: true,
-        backgroundColor: Colors.orange.shade700,
+        backgroundColor: Colors.yellow.shade500,
         actions: [    IconButton(
-          color: Colors.white,
+          color: Colors.red,
           alignment: Alignment.center,
-          iconSize: 20,
+          iconSize: 30,
           onPressed: (){
             Navigator.push(
                 context,
@@ -120,8 +121,8 @@ class _MyHomePageState extends State<MyHomePage> {
           });
         } ,
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.orange.shade800,
-        selectedItemColor: Colors.white,
+        backgroundColor: Colors.black,
+        selectedItemColor: Colors.yellow,
         selectedFontSize: 18,
         unselectedItemColor: Colors.white,
         items: const <BottomNavigationBarItem>[
@@ -135,7 +136,6 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person,
-              color: Colors.white,
             ),
             label: "6 ORE ",
           ),
@@ -143,7 +143,6 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person,
-              color: Colors.white,
             ),
             label: "ATTIVITA'",
           ),

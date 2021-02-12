@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:palladioitinerante/ringraziamenti.dart';
 
 class Drawerpage extends StatelessWidget {
   @override
@@ -13,12 +14,12 @@ class Drawerpage extends StatelessWidget {
               'L\'associazione',
               style: TextStyle(
                 fontSize: 25,
-                color: Colors.white,
+                color: Colors.black,
                 fontWeight: FontWeight.w600
               ),
             ),
             decoration: BoxDecoration(
-              color: Colors.orange.shade700,
+              color: Colors.yellow.shade500,
             ),
           ),
           ListTile(
@@ -54,7 +55,10 @@ class Drawerpage extends StatelessWidget {
             ),),
             onTap: () {
               // Update the state of the app.
-              Navigator.pop(context);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => Ringraziamenti()));
             },
           ),
         ],
