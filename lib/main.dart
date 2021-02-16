@@ -123,7 +123,8 @@ class _MyHomePageState extends State<MyHomePage> {
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.black,
         selectedItemColor: Colors.yellow,
-        selectedFontSize: 18,
+        selectedFontSize: 16,
+        unselectedFontSize: 16,
         unselectedItemColor: Colors.white,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
