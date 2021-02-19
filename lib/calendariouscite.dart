@@ -12,6 +12,6 @@ class CalendarioUscite extends StatefulWidget {
 class _CalendarioUsciteState extends State<CalendarioUscite> {
   @override
   Widget build(BuildContext context) {
-    return calendario.caricaCalendario();
+    return calendario;
   }
 }

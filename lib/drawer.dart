@@ -10,20 +10,15 @@ class Drawerpage extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
-            child: Text(
-              'L\'associazione',
-              style: TextStyle(
-                fontSize: 25,
-                color: Colors.black,
-                fontWeight: FontWeight.w600
-              ),
-            ),
+            child: Image.asset('images/logo.png'),
+
+
             decoration: BoxDecoration(
-              color: Colors.yellow.shade500,
+              color: Colors.orange.shade500,
             ),
           ),
           ListTile(
-            title: Text('Chi siamo', style: TextStyle(
+            title: Text('CHI SIAMO', style: TextStyle(
               fontSize: 20
             ),),
             onTap: () {
@@ -32,7 +27,7 @@ class Drawerpage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Dove siamo', style: TextStyle(
+            title: Text('DOVE SIAMO', style: TextStyle(
                 fontSize: 20
             ),),
             onTap: () {
@@ -41,7 +36,7 @@ class Drawerpage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Iscrivi con noi', style: TextStyle(
+            title: Text('ISCRIVITI', style: TextStyle(
               fontSize: 20
             ),),
             onTap: () {
@@ -50,7 +45,19 @@ class Drawerpage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Galleria', style: TextStyle(
+            title: Text('GALLERIA', style: TextStyle(
+                fontSize: 20
+            ),),
+            onTap: () {
+              // Update the state of the app.
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => Ringraziamenti()));
+            },
+          ),
+          ListTile(
+            title: Text('CONTATTI', style: TextStyle(
                 fontSize: 20
             ),),
             onTap: () {

@@ -7,11 +7,10 @@ class Ringraziamenti extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "RINGRAZIAMENTI",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.black),
         ),
-        backgroundColor: Colors.orange.shade700,
-        brightness: Brightness
-            .dark, // in questo modo l'orario e la carica della batteria diventano bianche
+        backgroundColor: Colors.orange.shade500,
+        brightness: Brightness.light, // in questo modo l'orario e la carica della batteria diventano bianche
       ),
       body: Container(),
     );

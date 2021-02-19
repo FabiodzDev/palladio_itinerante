@@ -29,6 +29,6 @@ class _SplashState extends State<Splash> {
         backgroundColor: Colors.white,
         styleTextUnderTheLoader: new TextStyle(),
         photoSize: 150.0,
-        loaderColor: Colors.orange.shade800);
+        loaderColor: Colors.yellow.shade500);
   }
 }
