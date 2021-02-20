@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:palladioitinerante/ringraziamenti.dart';
 
+import 'inviaemail.dart';
+
 class Drawerpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -53,7 +55,7 @@ class Drawerpage extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => Ringraziamenti()));
+                      builder: (context) => SendEmail()));
             },
           ),
           ListTile(

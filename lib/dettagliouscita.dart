@@ -87,7 +87,6 @@ class DettaglioUscita extends StatelessWidget {
           Row(
             children: [
               Text("preimpostata un'email che dovrai",	textAlign: TextAlign.justify, style: TextStyle(fontSize: 17),),
-             //r Expanded(child: Container()),
 
             ],
           ),

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'appuntamenti.dart';
 import 'dettagliouscita.dart';
+import 'inviaemail.dart';
 
 
 Appuntamenti appuntamentodifficolta = Appuntamenti.difficolta();
@@ -283,7 +284,7 @@ class Calendario extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => DettaglioUscita(iduscita: i, luogo: calendario[i].luogo, data: dataConvertita, partenza: calendario[i].partenza, tipoBici: calendario[i].tipoBici,),
+                        builder: (context) => SendEmail(luogo: calendario[i].luogo, data: dataConvertita, partenza: calendario[i].partenza, tipoBici: calendario[i].tipoBici,),
                       ),
                     );
                   },
