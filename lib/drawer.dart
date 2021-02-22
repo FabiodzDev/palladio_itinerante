@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:palladioitinerante/ringraziamenti.dart';
 
+import 'chisiamo.dart';
+import 'contatti.dart';
 import 'inviaemail.dart';
 
 class Drawerpage extends StatelessWidget {
@@ -24,19 +26,16 @@ class Drawerpage extends StatelessWidget {
               fontSize: 20
             ),),
             onTap: () {
+
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => ChiSiamo()));
               // Update the state of the app.
               // ...
             },
           ),
-          ListTile(
-            title: Text('DOVE SIAMO', style: TextStyle(
-                fontSize: 20
-            ),),
-            onTap: () {
-              // Update the state of the app.
-              // ...
-            },
-          ),
+
           ListTile(
             title: Text('ISCRIVITI', style: TextStyle(
               fontSize: 20
@@ -67,7 +66,7 @@ class Drawerpage extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => Ringraziamenti()));
+                      builder: (context) => Contatti()));
             },
           ),
         ],
